@@ -1,0 +1,21 @@
+:root {
+  font-family: Comic Neue, sans-serif;
+  font-weight: 600;
+  
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  line-height: 1.1;
+}
+
+
+
+
+
+
