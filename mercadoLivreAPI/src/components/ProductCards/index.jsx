@@ -8,18 +8,18 @@ function ProductCards({ products }) {
 		return <p className="text-center text-gray-500">Carregando produtos...</p>;
 	  }
 	  
-	  if (products.results === null || products.results === undefined) {
+	  if (products === null || products === undefined) {
 		return <p className="text-center text-gray-500">Carregando produtos...</p>;
 	  }
 	  
-	  if (products.results.length === 0) {
+	  if (products.length === 0) {
 		return <p className="text-center text-gray-500">Carregando produtos...</p>;
 	  }
 
 	return (
 		<div className="flex flex-col items-center p-4 sm:p-6 lg:p-8 ">
 			<h1 className="text-left w-3xl">Categoria: {products.query}</h1>
-			{products.results.map((product) => (
+			{products.map((product) => (
 				
 				<div className="flex flex-col sm:flex-row bg-gray-200 rounded-3xl cursor-pointer w-full max-w-4xl m-6 border-gray-200 border-3" >
 					<div className="flex items-center justify-center w-full sm:w-1/4 aspect-square rounded-xl ">
