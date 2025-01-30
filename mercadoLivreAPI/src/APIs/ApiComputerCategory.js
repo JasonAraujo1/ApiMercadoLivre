@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 function ApiComputerCategory() {
   
-    const [products, setProducts] = useState(null);
+    const [products, setProducts] = useState([]);
 
 	const fetchApi = async () => {
 		try {
@@ -10,18 +10,20 @@ function ApiComputerCategory() {
 				"https://api.mercadolibre.com/sites/MLB/search?q=computador",
 			);
 			const data = await response.json();
-			console.log(data);
+			// console.log(data);
 			setProducts(data);
 		} catch (error) {
 			console.log("Erro fetching data", error);
 		}
 	};
 
+	
+
 	useEffect(() => {
 		fetchApi();
 	}, []);
-
-    return {products}
+	
+    return {products }
   
 }
 

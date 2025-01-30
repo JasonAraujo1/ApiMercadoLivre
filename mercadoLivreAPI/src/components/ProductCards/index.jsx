@@ -1,6 +1,9 @@
 import React from "react";
 
 function ProductCards({ products }) {
+
+	
+
 	if (products === null || products === undefined) {
 		return <p className="text-center text-gray-500">Carregando produtos...</p>;
 	  }

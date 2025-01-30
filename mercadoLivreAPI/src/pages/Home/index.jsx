@@ -7,7 +7,7 @@ export default function Home() {
   
 	return (
 	  <div>
-		<MenuBar products={products} />
+		<MenuBar />
 		<h1 className="text-3xl text-center p-12 font-medium">
 		  Simulado FrontEnd
 		</h1>

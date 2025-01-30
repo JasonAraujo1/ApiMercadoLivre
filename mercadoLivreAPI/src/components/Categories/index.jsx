@@ -1,38 +1,21 @@
 import React, { useEffect, useState } from "react";
+// import ApiCategories from "../../APIs/ApiCategories";
 
-export default function Categories({ products }) {
-	const [categories, setCategories] = useState(null);
+export default function Categories() {
+	const[selectOption, setSelectOption] = useState(null)
 
-
-		const fetchApi = async () => {
-      try {
-        const response = await fetch(
-          "https://api.mercadolibre.com/sites/MLB/categories",
-        );
-        const data = await response.json();
-        console.log(data);
-        
-        setCategories(data);
-      } catch (error) {
-        console.log("Erro fetching data", error);
-      }
-   
-
-
+	const handleSelectOption = (event) =>{
+		const value = event.target.value
+		setSelectOption(value)
+		
+		
 	}
-
-  useEffect(() => {
-    fetchApi();
-  }, []);
-
-
-	
 
 	return (
 		<div className="bg-gray-200 rounded-xl flex px-2">
    
      
-			<select className="flex px-2 md:px-5 outline-0 bg-gray-200 cursor-pointer">
+			<select value={selectOption} onChange={handleSelectOption} className="flex px-2 md:px-5 outline-0 bg-gray-200 cursor-pointer">
 				<option value="" disabled selected>
 					Categorias
 				</option>
