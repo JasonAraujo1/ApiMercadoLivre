@@ -9,7 +9,7 @@ export default function MenuBar({categories}) {
 	return (
 		<div className=" bg-amber-200 ">
 			<div className="p-14 flex justify-between max-w-[1280px]  mx-auto gap-3">
-				<Categories categories = {categories}/>
+				<Categories categories = {categories} />
 				<div className="flex items-center">
 					<input
 						type="search"

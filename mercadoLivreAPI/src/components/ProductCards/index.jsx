@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProductCards({ products }) {
+function ProductCards({ products, categoryProducts }) {
 
 	
 
