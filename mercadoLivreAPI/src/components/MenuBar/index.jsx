@@ -2,6 +2,8 @@ import React from "react";
 import Categories from "../Categories";
 import { useState } from "react";
 
+
+
 export default function MenuBar({categories}) {
 	function handleSearch() {
 		fetchApiSearchInput(inputSearchvalue);

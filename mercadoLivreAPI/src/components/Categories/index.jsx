@@ -13,7 +13,7 @@ export default function Categories({ categories }) {
 						Categorias
 					</option >
 					{categories.map((category) => (
-					<option  value="1"> {category.name}
+					<option key={category}> {category.name}
 					</option>
 					
 				))}
