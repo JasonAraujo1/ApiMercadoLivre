@@ -42,3 +42,16 @@ export async function fetchCategorySelected(categoryId) {
 		return false;
 	}
 }
+
+export async function fetchBySerch(search) {
+	try {
+		const response = await fetch(
+			`https://api.mercadolibre.com/sites/MLB/search?q=${search}`,
+		);
+		const data = await response.json();
+		return data.results;
+	} catch (error) {
+		console.log("Erro fetching data", error);
+		return false;
+	}
+}

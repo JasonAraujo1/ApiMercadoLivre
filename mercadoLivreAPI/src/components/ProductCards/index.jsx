@@ -1,8 +1,8 @@
 import React from "react";
 
-function ProductCards({ products, categoryProducts }) {
-
+function ProductCards({ products, categories }) {
 	
+  
 
 	if (products === null || products === undefined) {
 		return <p className="text-center text-gray-500">Carregando produtos...</p>;
@@ -16,9 +16,9 @@ function ProductCards({ products, categoryProducts }) {
 		return <p className="text-center text-gray-500">Carregando produtos...</p>;
 	  }
 
-	return (
+	  return (
 		<div className="flex flex-col items-center p-4 sm:p-6 lg:p-8 ">
-			<h1 className="text-left w-3xl">Categoria: {products.query}</h1>
+			<h1 className="text-left w-3xl">Categoria: {categories}</h1>
 			{products.map((product) => (
 				
 				<div className="flex flex-col sm:flex-row bg-gray-200 rounded-3xl cursor-pointer w-full max-w-4xl m-6 border-gray-200 border-3" >
