@@ -1,3 +1,5 @@
+<img src="./mercadoLivreAPI/src/assets/thumb.jpeg"/>
+
 🚀 Projeto: Integração com API do Mercado Livre
 
 Desenvolvi uma aplicação utilizando React, Tailwind CSS e React Router para consumir a API do Mercado Livre e exibir produtos de forma dinâmica. A aplicação permite:
